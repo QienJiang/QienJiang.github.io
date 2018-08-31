@@ -1,22 +1,10 @@
+/*
 html {
     height: 100%;
     overflow: hidden;
 }
-/*
-body {
-    color: #fff;
-    margin: 0;
-    padding: 0;
-    perspective: 1px;
-    transform-style: preserve-3d;
-    height: 100%;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    font-family: "Luna";
-
-    
-}
 */
+
 body {
     background-image: url(image/%E6%98%9F%E7%A9%BA.jpg);
     background-size: cover;
