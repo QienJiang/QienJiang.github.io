@@ -2,6 +2,7 @@ html {
     height: 100%;
     overflow: hidden;
 }
+/*
 body {
     color: #fff;
     margin: 0;
@@ -12,8 +13,55 @@ body {
     overflow-y: scroll;
     overflow-x: hidden;
     font-family: "Luna";
+
+    
+}
+*/
+body {
+    background-image: url(image/%E6%98%9F%E7%A9%BA.jpg);
+    background-size: cover;
+    font-family: Arial;
+    color: white;
+    margin: 0;
+    padding: 0;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-family: "Luna";
+}
+#headul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+#headul li {
+   float: left;
+    width: 200px;
+    height: 40px;
+    background-color: black;
+    opacity: .8;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+    margin-right: 2px;
+}
+#headul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
 }
 
+#headul li a:hover {
+    background-color: green;
+}
+#headul li ul li {
+    display: none;
+}
+#headul li:hover ul li {
+    display: block;
+}
 header {
     box-sizing: border-box;
     min-height: 100vh;
@@ -56,24 +104,47 @@ header * {
     margin: 0;
     padding: 1em 0;
 }
-img.bg {
-  /* Set rules to fill background */
-  min-height: 100%;
-  min-width: 1024px;
-	
-  /* Set up proportionate scaling */
-  width: 100%;
-  height: auto;
-	
-  /* Set up positioning */
-  position: fixed;
-  top: 0;
-  left: 0;
+
+*{
+    margin:0;
+    padding: 0;
+}
+.fly-text {
+    list-style: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.fly-text li {
+    display: inline-block;
+    margin-right: 50px;
+    font-family: Open Sans, Arial;
+    font-weight: 300;
+    font-size: 4em;
+    color: #fff;
+    opacity: 1;
+    transition: all 2.5s ease;
+}
+.fly-text li:last-child {
+    margin-right: 0;
+}
+.fly-text.hidden li {
+    opacity: 0;
+}
+.fly-text.hidden li:nth-child(1) {
+    transform: translateX(-200px) translateY(-200px);
+}
+.fly-text.hidden li:nth-child(2) {
+    transform: translateX(20px) translateY(180px);
+}
+.fly-text.hidden li:nth-child(3) {
+    transform: translateX(-150px) translateY(-80px);
+}
+.fly-text.hidden li:nth-child(4) {
+    transform: translateX(1px) translateY(-200px);
+}
+.fly-text.hidden li:nth-child(5) {
+    transform: translateX(20px) translateY(-20px);
 }
 
-@media screen and (max-width: 1024px) { /* Specific to this particular image */
-  img.bg {
-    left: 50%;
-    margin-left: -512px;   /* 50% */
-  }
-}
