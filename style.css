@@ -1,12 +1,5 @@
-/*
-html {
-    height: 100%;
-    overflow: hidden;
-}
-*/
-
 body {
-    background-image: url(image/%E6%98%9F%E7%A9%BA.jpg);
+ 
     background-size: cover;
     font-family: Arial;
     color: white;
@@ -18,6 +11,17 @@ body {
     overflow-y: scroll;
     overflow-x: hidden;
     font-family: "Luna";
+}
+#mainbar {
+    width: 100%;
+    height: 25vh;
+    background-image: url(image/%E6%98%9F%E7%A9%BA.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+nav ul{
+    float: right;
+    margin-right: 0px;
 }
 #headul {
     margin: 0px;
@@ -34,6 +38,7 @@ body {
     text-align: center;
     font-size: 20px;
     margin-right: 2px;
+ 
 }
 #headul li a {
     text-decoration: none;
@@ -50,9 +55,10 @@ body {
 #headul li:hover ul li {
     display: block;
 }
+
 header {
     box-sizing: border-box;
-    min-height: 100vh;
+    min-height: 50vh;
     padding: 30vw 0 5vw;
     position: relative;
     transform-style: inherit;
@@ -68,7 +74,7 @@ header, header:before {
 }
 
 #first {
-    height: 100vh;
+    height: 130vh;
     width: 100%;
     background-image: url(image/%E6%98%9F%E7%A9%BA.jpg);
     background-size: cover;
